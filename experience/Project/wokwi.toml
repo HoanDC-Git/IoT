@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+firmware = '.pio/build/esp32doit-devkit-v1/firmware.bin'
+elf = '.pio/build/esp32doit-devkit-v1/firmware.elf'
+rfc2217ServerPort = 4000
+# Forward http://localhost:8180 to port 80 on the simulated ESP32:
+[[net.forward]]
+from = "192.168.1.6:8180"
+to = "target:80"
